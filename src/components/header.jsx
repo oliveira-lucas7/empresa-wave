@@ -83,10 +83,10 @@ function Header() {
                 }}
               >
                 <MenuItem onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">Texto 1</Typography>
+                  <Typography textAlign="center">Logic Wave</Typography>
                 </MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">Texto 2</Typography>
+                  <Typography textAlign="center">Nossos projetos</Typography>
                 </MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">Texto 3</Typography>
@@ -200,7 +200,7 @@ function Header() {
                   color: "rgba(255, 255, 255, 1)",
                 }}
               >
-                Texto 1
+                Logic Wave
               </Button>
               <Button
                 variant="text"
@@ -213,7 +213,7 @@ function Header() {
                   color: "rgba(255, 255, 255, 1)",
                 }}
               >
-                Texto 2
+                Nossos projetos
               </Button>
               <Button
                 variant="text"
