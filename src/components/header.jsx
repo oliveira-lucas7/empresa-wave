@@ -10,6 +10,7 @@ import {
   Toolbar,
   Typography,
   Menu,
+  Button,
 } from "@mui/material";
 import React from "react";
 import logo from "../img/logo-wave.png";
@@ -188,11 +189,8 @@ function Header() {
             </Box>
 
             <Box sx={{ display: { xs: "none", md: "flex" } }}>
-              <Typography
-                variant="h6"
-                component="a"
-                href="/"
-                noWrap
+              <Button
+                variant="text"
                 sx={{
                   mr: 2,
                   display: { xs: "none", md: "flex" },
@@ -203,12 +201,9 @@ function Header() {
                 }}
               >
                 Texto 1
-              </Typography>
-              <Typography
-                variant="h6"
-                component="a"
-                href="/"
-                noWrap
+              </Button>
+              <Button
+                variant="text"
                 sx={{
                   mr: 2,
                   display: { xs: "none", md: "flex" },
@@ -219,12 +214,9 @@ function Header() {
                 }}
               >
                 Texto 2
-              </Typography>
-              <Typography
-                variant="h6"
-                component="a"
-                href="/"
-                noWrap
+              </Button>
+              <Button
+                variant="text"
                 sx={{
                   mr: 2,
                   display: { xs: "none", md: "flex" },
@@ -235,7 +227,7 @@ function Header() {
                 }}
               >
                 Texto 3
-              </Typography>
+              </Button>
             </Box>
             <Box
               sx={{
@@ -254,8 +246,8 @@ function Header() {
                   <LanguageIcon color="white" />
                 </InputLabel>
                 <Select>
-                  <MenuItem value={10}>English</MenuItem>
-                  <MenuItem value={20}>PT-BR</MenuItem>
+                  <MenuItem value={"English"}>English</MenuItem>
+                  <MenuItem value={"PT-BR"}>PT-BR</MenuItem>
                 </Select>
               </FormControl>
             </Box>
