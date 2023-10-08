@@ -17,27 +17,20 @@ import logo from "../img/logo-wave.png";
 import LanguageIcon from "@mui/icons-material/Language";
 import MenuIcon from "@mui/icons-material/Menu";
 
-function Header() {
+function Header(props) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
   };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
   return (
     <AppBar
-      position="static"
+      position="sticky"
       sx={{
         backgroundColor: "rgba(15, 17, 32, 1)",
       }}
@@ -83,10 +76,30 @@ function Header() {
                 }}
               >
                 <MenuItem onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">Logic Wave</Typography>
+                  <Typography
+                    textAlign="center"
+                    component={"a"}
+                    href="#LogicWave"
+                    sx={{
+                      textDecoration: "none",
+                      color: "black",
+                    }}
+                  >
+                    Logic Wave
+                  </Typography>
                 </MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">Nossos projetos</Typography>
+                  <Typography
+                    textAlign="center"
+                    component={"a"}
+                    href="#Nossoprojeto"
+                    sx={{
+                      textDecoration: "none",
+                      color: "black",
+                    }}
+                  >
+                    Nossos projetos
+                  </Typography>
                 </MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">Texto 3</Typography>
@@ -139,8 +152,8 @@ function Header() {
                   <LanguageIcon color="white" />
                 </InputLabel>
                 <Select>
-                  <MenuItem value={10}>English</MenuItem>
-                  <MenuItem value={20}>PT-BR</MenuItem>
+                  <MenuItem>English</MenuItem>
+                  <MenuItem>PT-BR</MenuItem>
                 </Select>
               </FormControl>
             </Box>
@@ -199,6 +212,7 @@ function Header() {
                   textDecoration: "none",
                   color: "rgba(255, 255, 255, 1)",
                 }}
+                href="#LogicWave"
               >
                 Logic Wave
               </Button>
@@ -212,6 +226,7 @@ function Header() {
                   textDecoration: "none",
                   color: "rgba(255, 255, 255, 1)",
                 }}
+                href="#Nossoprojeto"
               >
                 Nossos projetos
               </Button>
@@ -246,8 +261,8 @@ function Header() {
                   <LanguageIcon color="white" />
                 </InputLabel>
                 <Select>
-                  <MenuItem value={"English"}>English</MenuItem>
-                  <MenuItem value={"PT-BR"}>PT-BR</MenuItem>
+                  <MenuItem>English</MenuItem>
+                  <MenuItem>PT-BR</MenuItem>
                 </Select>
               </FormControl>
             </Box>

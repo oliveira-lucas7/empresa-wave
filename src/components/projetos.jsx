@@ -1,62 +1,62 @@
-import React from 'react';
+import React from "react";
 import imgproject from "../img/image 4 (1).png";
-import Style from "../css/projects.module.css"
+import Style from "../css/projects.module.css";
 
-function Projetos() {
+function Projetos(props) {
   return (
     <>
-        <section class={Style.sectionprojetos}>
+      <section className={Style.sectionprojetos} id="Nossoprojeto">
         <h2>Nossos projetos</h2>
-        <section class={Style.container}>
-            <div class={Style.item}>
-                <img src={imgproject} alt="" class={Style.projectimg}/>
-                <span>Project 1</span>
-                <button class={Style.btnmais}>Veja mais</button>
-            </div>
-            <div class={Style.item}>
-                <img src={imgproject} alt="" class={Style.projectimg}/>
-                <span>Project 1</span>
-                <button class={Style.btnmais}>Veja mais</button>
-            </div>
-            <div class={Style.item}>
-                <img src={imgproject} alt="" class={Style.projectimg}/>
-                <span>Project 1</span>
-                <button class={Style.btnmais}>Veja mais</button>
-            </div>
-            <div class={Style.item}>
-                <img src={imgproject} alt="" class={Style.projectimg}/>
-                <span>Project 1</span>
-                <button class={Style.btnmais}>Veja mais</button>
-            </div>
-            <div class={Style.item}>
-                <img src={imgproject} alt="" class={Style.projectimg}/>
-                <span>Project 1</span>
-                <button class={Style.btnmais}>Veja mais</button>
-            </div>
-            <div class={Style.item}>
-                <img src={imgproject} alt="" class={Style.projectimg}/>
-                <span>Project 1</span>
-                <button class={Style.btnmais}>Veja mais</button>
-            </div>
-            <div class={Style.item}>
-                <img src={imgproject} alt="" class={Style.projectimg}/>
-                <span>Project 1</span>
-                <button class={Style.btnmais}>Veja mais</button>
-            </div>
-            <div class={Style.item}>
-                <img src={imgproject} alt="" class={Style.projectimg}/>
-                <span>Project 1</span>
-                <button class={Style.btnmais}>Veja mais</button>
-            </div>
-                        <div class={Style.item}>
-                <img src={imgproject} alt="" class={Style.projectimg}/>
-                <span>Project 1</span>
-                <button class={Style.btnmais}>Veja mais</button>
-            </div>
+        <section className={Style.container}>
+          <div className={Style.item}>
+            <img src={imgproject} alt="" className={Style.projectimg} />
+            <span>Project 1</span>
+            <button className={Style.btnmais}>Veja mais</button>
+          </div>
+          <div className={Style.item}>
+            <img src={imgproject} alt="" className={Style.projectimg} />
+            <span>Project 1</span>
+            <button className={Style.btnmais}>Veja mais</button>
+          </div>
+          <div className={Style.item}>
+            <img src={imgproject} alt="" className={Style.projectimg} />
+            <span>Project 1</span>
+            <button className={Style.btnmais}>Veja mais</button>
+          </div>
+          <div className={Style.item}>
+            <img src={imgproject} alt="" className={Style.projectimg} />
+            <span>Project 1</span>
+            <button className={Style.btnmais}>Veja mais</button>
+          </div>
+          <div className={Style.item}>
+            <img src={imgproject} alt="" className={Style.projectimg} />
+            <span>Project 1</span>
+            <button className={Style.btnmais}>Veja mais</button>
+          </div>
+          <div className={Style.item}>
+            <img src={imgproject} alt="" className={Style.projectimg} />
+            <span>Project 1</span>
+            <button className={Style.btnmais}>Veja mais</button>
+          </div>
+          <div className={Style.item}>
+            <img src={imgproject} alt="" className={Style.projectimg} />
+            <span>Project 1</span>
+            <button className={Style.btnmais}>Veja mais</button>
+          </div>
+          <div className={Style.item}>
+            <img src={imgproject} alt="" className={Style.projectimg} />
+            <span>Project 1</span>
+            <button className={Style.btnmais}>Veja mais</button>
+          </div>
+          <div className={Style.item}>
+            <img src={imgproject} alt="" className={Style.projectimg} />
+            <span>Project 1</span>
+            <button className={Style.btnmais}>Veja mais</button>
+          </div>
         </section>
-    </section>
+      </section>
     </>
-  )
+  );
 }
 
-export default Projetos
+export default Projetos;
