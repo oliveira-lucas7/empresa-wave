@@ -3,6 +3,7 @@
     margin: 3% auto;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .info{
@@ -27,7 +28,7 @@
 }
 
 .sobre{
-    height: 12%;
+    height: 3rem;
     width: 32%;
     border-radius: 10px;
     background-color: #0F1120;
