@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import Header from "./components/header";
 import Projetos from "./components/projetos";
 import Home from "./components/home";
+import Sobrenos from "./components/sobrenos"
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Home />
       <Projetos />
+      <Sobrenos/>
       <Footer />
     </div>
   );

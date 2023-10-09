@@ -1,0 +1,40 @@
+import React from "react";
+import Style from "../css/sobrenos.module.css";
+
+function sobrenos() {
+  return (
+    <div>
+      <h2 className={Style.h2}>Sobre a empresa</h2>
+      <div className={Style.container}>
+        <div className={Style.secondary}>
+          <span className={Style.text}>Inovação</span>
+          <span className={Style.textmain}>
+            A inovação encontra a tecnologia para criar soluções digitais que
+            impulsionam o sucesso de nossos clientes. Somos uma empresa dedicada
+            ao desenvolvimento de sistemas e sites, comprometida em transformar
+            ideias em realidade digital.
+          </span>
+          <span className={Style.seta}>...</span>
+        </div>
+        <div className={Style.secondary}>
+          <span className={Style.text}>Segurança</span>
+          <span className={Style.textmain}>
+          Na LogicWave, nossa abordagem é simples: entender as necessidades exclusivas de cada cliente e, em seguida, aplicar nossa experiência e criatividade para fornecer soluções sob medida que impulsionem o crescimento e o sucesso.
+          </span>
+          <span className={Style.seta}>...</span>
+        </div>
+        <div className={Style.secondary}>
+          <span className={Style.text}>Soluções</span>
+          <span className={Style.textmain}>
+            Fundada por um grupo de apaixonados por tecnologia, nossa empresa
+            nasceu da crença de que a tecnologia pode ser uma força motriz para
+            o progresso, eficiência e inovação em todos os setores.
+          </span>
+          <span className={Style.seta}>...</span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default sobrenos;
