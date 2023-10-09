@@ -4,6 +4,8 @@
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
+    background-color: #0F1120;
+    color: #fff;
 }
 
 .info{
@@ -31,7 +33,7 @@
     height: 3rem;
     width: 32%;
     border-radius: 10px;
-    background-color: #0F1120;
+    background-color: #181B33;
     color: white;
 }
 
