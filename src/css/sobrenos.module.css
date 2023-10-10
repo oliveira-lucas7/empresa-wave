@@ -13,7 +13,7 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .secondary {
     position: relative;
@@ -40,7 +40,7 @@
 
   }
   .textmain{
-    padding: 0px 20px;
+    padding: 0px 30px;
     font-size: 1.1rem;
   }
   .text{
@@ -50,6 +50,12 @@
   .seta{
     font-size: 2rem;
     align-items: right;
+  }
+
+  .img{
+    width: 4.3rem;
+    height: 4.3rem;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width:1116px) and (max-width:1439px){
@@ -104,6 +110,12 @@
         font-size: 2rem;
         align-items: right;
       }
+
+      .img{
+        width: 4.3rem;
+        height: 4.3rem;
+        margin: 0 auto;
+      }
     }
 @media screen and (min-width:100px) and (max-width:1115px){
     
@@ -157,5 +169,11 @@
           .seta{
             font-size: 2rem;
             align-items: right;
+        }
+
+        .img{
+          width: 4.3rem;
+          height: 4.3rem;
+          margin: 0 auto;
         }
 }
