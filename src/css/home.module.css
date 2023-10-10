@@ -1,11 +1,12 @@
 .container{
     display: flex;
-    margin: 3% auto;
+    margin: 4% auto;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #0F1120;
-    color: #fff;
+    background-color: red;
+    color: #0f1120;
+    justify-content: space-evenly;
 }
 
 .info{
@@ -13,18 +14,23 @@
     padding: 1%;
     align-items: center;
     text-align: center;
+    color: white;
 }
 
 
 .info p{
     flex-wrap: wrap;
-    width: 70%;
+    width: 85%;
     margin: 3% auto;
+    font-size: 35px;
+}
+
+.info h1{
+    font-size: 45px;
 }
 
 .imagemLogo img{
     height: 70%;
-    width: 70%;
     padding: 0;
     margin: 0;
 }
@@ -35,7 +41,9 @@
     border-radius: 10px;
     background-color: #181B33;
     color: white;
+    border: none;
 }
+
 
 .sobre:hover{
     background-color: #fff;
