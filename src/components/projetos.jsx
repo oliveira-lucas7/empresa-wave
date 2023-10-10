@@ -6,59 +6,21 @@ function Projetos(props) {
   return (
     <>
       <section className={Style.sectionprojetos} id="Nossoprojeto">
-        <h2>Nossos projetos</h2>
+        <h2>Nossos Projetos</h2>
         <section className={Style.container}>
-          <div className={Style.item}>
-            <img src={imgproject} alt="" className={Style.projectimg} />
-            <span>Project 1</span>
-            <button className={Style.btnmais}>Veja mais</button>
+          <div className={Style.project1}>
+              <button>Veja mais</button>
           </div>
-          <div className={Style.item}>
-            <img src={imgproject} alt="" className={Style.projectimg} />
-            <span>Project 1</span>
-            <button className={Style.btnmais}>Veja mais</button>
+          <div className={Style.project2}>
+          <button>Veja mais</button>
           </div>
-          <div className={Style.item}>
-            <img src={imgproject} alt="" className={Style.projectimg} />
-            <span>Project 1</span>
-            <button className={Style.btnmais}>Veja mais</button>
+          <div className={Style.project3}>
+          <button>Veja mais</button>
           </div>
-          <div className={Style.item}>
-            <img src={imgproject} alt="" className={Style.projectimg} />
-            <span>Project 1</span>
-            <button className={Style.btnmais}>Veja mais</button>
+          <div className={Style.project4}>
+          <button>Veja mais</button>
           </div>
-          <div className={Style.item}>
-            <img src={imgproject} alt="" className={Style.projectimg} />
-            <span>Project 1</span>
-            <button className={Style.btnmais}>Veja mais</button>
-          </div>
-          <div className={Style.item}>
-            <img src={imgproject} alt="" className={Style.projectimg} />
-            <span>Project 1</span>
-            <button className={Style.btnmais}>Veja mais</button>
-          </div>
-          <div className={Style.item}>
-            <img src={imgproject} alt="" className={Style.projectimg} />
-            <span>Project 1</span>
-            <button className={Style.btnmais}>Veja mais</button>
-          </div>
-          <div className={Style.item}>
-            <img src={imgproject} alt="" className={Style.projectimg} />
-            <span>Project 1</span>
-            <button className={Style.btnmais}>Veja mais</button>
-          </div>
-          <div className={Style.item}>
-            <img src={imgproject} alt="" className={Style.projectimg} />
-            <span>Project 1</span>
-            <button className={Style.btnmais}>Veja mais</button>
-          </div>
-          <div className={Style.item}>
-            <img src={imgproject} alt="" className={Style.projectimg} />
-            <span>Project 1</span>
-            <button className={Style.btnmais}>Veja mais</button>
-          </div>
-        </section>
+      </section>
       </section>
     </>
   );

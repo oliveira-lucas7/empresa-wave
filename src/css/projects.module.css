@@ -1,63 +1,94 @@
-.sectionprojetos h2 {
-  text-align: center;
-  font-size: 3em;
-  color: white;
-}
-.container {
-  width: 65%;
-  margin: 0 auto;
+.container{
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  width: 80%;
   align-items: center;
   justify-content: center;
-}
-.item {
-  flex-basis: auto;
-  height: 200px;
-  width: 200px;
-  background-color: rgb(202, 202, 202);
-  border-radius: 20px;
-}
-.projectimg {
-  max-width: 100%;
-}
-.item span {
-  display: block;
-  font-size: 1.5em;
-  padding-top: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 25px;
-}
-.btnmais {
-  display: block;
   margin: 0 auto;
-  width: 80%;
-  height: 2.5em;
+  gap: .5em;
+}
+.sectionprojetos {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+}
+.sectionprojetos h2{
+  color: white;
+  font-size: 2.5em;
+}
+.project1{
+  flex-grow: 1;
+  background-color: rgba(98, 225, 233, 1);
+  width: 65%;
+  height: 250px;    
+  flex-basis: 200;
+  border-radius: 10px;
+}
+.project2{
+  flex-grow: 1;
+  height: 250px;    
+  flex-basis: 200;
+  border-radius: 10px;
+  width: 33%;
+  background-color: rgba(98, 225, 233, 1);
+}
+.project3{
+  flex-grow: 1;
+  height: 250px;    
+  flex-basis: 200;
+  border-radius: 10px;
+  width: 50%;
+  background-color: rgba(98, 225, 233, 1);
+}
+.project4{
+  flex-grow: 1;
+  height: 250px;    
+  flex-basis: 200;
+  border-radius: 10px;
+  width: 45%;
+  background-color: rgba(98, 225, 233, 1);
+}
+.project1 button, .project2 button, .project3 button, .project4 button{
   text-decoration: none;
-  border-radius: 15px;
-  font-size: 1em;
-  background-color: #182438;
-  color: #fff;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;  
+  color: transparent;
+  border: none;
+  border-radius: 10px;
+  font-size: 2em;
 }
-.btnmais:hover {
-  -webkit-transform: scale(1.3);
+.project1 button:hover, .project2 button:hover, .project3 button:hover, .project4 button:hover{
+  color: black;
+  -webkit-transform: scale(2);
   -ms-transform: scale(1.3);
-  transform: scale(1.1);
-  transition-duration: 0.7s;
-  cursor: pointer;
+  transform: scale(1.2);
+  transition-duration: 1.2s;
 }
-@Media screen and (max-width: 425px){
-  .sectionprojetos h2{
-    font-size: 2.4em;
+@Media screen and (max-width: 768px){
+  .project1{
+      width: 60%;
+      height: 200px;
+  }
+  .project2{
+      width: 30%;
+      height: 200px;
+  }
+  .project3{
+    width: 45%;
+    height: 200px;
+}
+  .project4{
+    width: 40%;
+    height: 200px;
   }
 }
-@Media screen and (max-width: 375px){
-  .sectionprojetos h2{
-    font-size: 2.3em;
+@Media screen and (max-width: 650px){
+  .project1, .project2, .project3, .project4{
+      width: 300px;
+      height: 200px;
   }
-}@Media screen and (max-width: 320px){
   .sectionprojetos h2{
     font-size: 2em;
   }
