@@ -3,7 +3,7 @@ import Style from "../css/sobrenos.module.css";
 
 function sobrenos() {
   return (
-    <div>
+    <div id="Sobrenos">
       <h2 className={Style.h2}>Sobre a empresa</h2>
       <div className={Style.container}>
         <div className={Style.secondary}>

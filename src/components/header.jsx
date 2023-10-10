@@ -102,7 +102,17 @@ function Header(props) {
                   </Typography>
                 </MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">Texto 3</Typography>
+                <Typography
+                    textAlign="center"
+                    component={"a"}
+                    href="#Sobrenos"
+                    sx={{
+                      textDecoration: "none",
+                      color: "black",
+                    }}
+                  >
+                    Nossos projetos
+                  </Typography>
                 </MenuItem>
               </Menu>
             </Box>
@@ -152,8 +162,8 @@ function Header(props) {
                   <LanguageIcon color="white" />
                 </InputLabel>
                 <Select>
-                  <MenuItem>English</MenuItem>
-                  <MenuItem>PT-BR</MenuItem>
+                  <MenuItem value="EN">English</MenuItem>
+                  <MenuItem value="BR">PT-BR</MenuItem>
                 </Select>
               </FormControl>
             </Box>
@@ -240,8 +250,10 @@ function Header(props) {
                   textDecoration: "none",
                   color: "rgba(255, 255, 255, 1)",
                 }}
+                href="#Sobrenos"
+
               >
-                Texto 3
+                Sobre a empresa
               </Button>
             </Box>
             <Box
@@ -261,8 +273,8 @@ function Header(props) {
                   <LanguageIcon color="white" />
                 </InputLabel>
                 <Select>
-                  <MenuItem>English</MenuItem>
-                  <MenuItem>PT-BR</MenuItem>
+                  <MenuItem  value="EN">English</MenuItem>
+                  <MenuItem  value="BR">PT-BR</MenuItem>
                 </Select>
               </FormControl>
             </Box>
