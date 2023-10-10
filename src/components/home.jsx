@@ -11,9 +11,7 @@ function Home() {
         </p>
         <button className={Style.sobre}>Sobre Nós</button>
       </div>
-      <div className={Style.imagemLogo}>
-        <img className={Style.imagemLogo} src={logohome} alt="Logo da " />
-      </div>
+      <img className={Style.imagemLogo} src={logohome} alt="Logo da " />
     </main>
   );
 }

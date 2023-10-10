@@ -7,24 +7,17 @@
     background-color: #1A1C2A;
     color: #0f1120;
     justify-content: space-evenly;
+    vertical-align: center;
 }
 
 .info{
     width: 30%;
-    padding: 1%;
     align-items: center;
     text-align: center;
     color: white;
     font-weight: bold;
 }
 
-
-.info p{
-    flex-wrap: wrap;
-    width: 85%;
-    margin: 3% auto;
-    font-size: 40px;
-}
 
 .imagemLogo img{
     height: 70%;
@@ -64,13 +57,6 @@
 }
 
 @Media screen and (min-width: 768px) and (max-width:768px){
-    .info p {
-        width: 90%;
-    }
-    .imagemLogo{
-        height: 40%;
-        width: 50%;
-    }
     .sobre{
         width: 80%;
     }
