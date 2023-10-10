@@ -1,14 +1,14 @@
 import "./App.css";
 import Footer from "./components/Footer";
-import Header from "./components/header";
 import Projetos from "./components/projetos";
 import Home from "./components/home";
 import Sobrenos from "./components/sobrenos"
+import Header from "./components/header";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Header/>
       <Home />
       <Projetos />
       <Sobrenos/>
