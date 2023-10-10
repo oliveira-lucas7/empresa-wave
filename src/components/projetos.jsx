@@ -53,6 +53,11 @@ function Projetos(props) {
             <span>Project 1</span>
             <button className={Style.btnmais}>Veja mais</button>
           </div>
+          <div className={Style.item}>
+            <img src={imgproject} alt="" className={Style.projectimg} />
+            <span>Project 1</span>
+            <button className={Style.btnmais}>Veja mais</button>
+          </div>
         </section>
       </section>
     </>
