@@ -51,12 +51,17 @@ const Footer = () => {
         </Box>
         <Box
           sx={{
-            width: 60,
             display: "flex",
-            justifyContent: "space-between",
           }}
         >
-          <InstagramIcon sx={{ color: "white", fontSize: "2.5rem" }} />
+          <Typography
+            component="a"
+            href="https://www.instagram.com/logicwave.sistemas/"
+            target="_blank"
+            noWrap
+          >
+            <InstagramIcon sx={{ color: "white", fontSize: "2.5rem" }} />
+          </Typography>
           <WhatsAppIcon sx={{ color: "white", fontSize: "2.5rem" }} />
         </Box>
       </Box>
