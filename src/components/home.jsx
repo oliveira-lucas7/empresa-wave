@@ -6,10 +6,8 @@ function Home() {
   return (
     <main className={Style.container} id="LogicWave">
       <div className={Style.info}>
-        <h1>LOGIC WAVE</h1>
         <p>
-          Bem-vindo à LogicWave, onde a inovação encontra a tecnologia para
-          criar soluções digitais que impulsionam o sucesso de nossos clientes.
+          Transformando desafios em soluções <span className={Style.digitais}>digitais</span>.
         </p>
         <button className={Style.sobre}>Sobre Nós</button>
       </div>

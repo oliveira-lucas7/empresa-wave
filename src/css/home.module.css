@@ -4,7 +4,7 @@
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    background-color: red;
+    background-color: #1A1C2A;
     color: #0f1120;
     justify-content: space-evenly;
 }
@@ -15,6 +15,7 @@
     align-items: center;
     text-align: center;
     color: white;
+    font-weight: bold;
 }
 
 
@@ -22,11 +23,7 @@
     flex-wrap: wrap;
     width: 85%;
     margin: 3% auto;
-    font-size: 35px;
-}
-
-.info h1{
-    font-size: 45px;
+    font-size: 40px;
 }
 
 .imagemLogo img{
@@ -54,6 +51,9 @@
     transform: scale(1.1);
     transition-duration: 0.7s;
     cursor: pointer;
+}
+.info span {
+    color: #303FB0;
 }
 
 

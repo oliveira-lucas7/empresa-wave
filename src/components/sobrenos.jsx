@@ -7,7 +7,10 @@ import Computador from "../img/computador.png"
 function sobrenos() {
   return (
     <div id="Sobrenos">
-      <h2 className={Style.h2}>Sobre a empresa</h2>
+      <div className={Style.textodiv}>
+      <span className={Style.h2}>Sobre a</span>
+      <span className={Style.empresa}>empresa</span>
+      </div>
       <div className={Style.container}>
         <div className={Style.secondary}>
           <img src={Ideia} alt="Lampada de ideia" className={Style.img}/>

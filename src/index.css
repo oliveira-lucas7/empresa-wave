@@ -1,3 +1,5 @@
+
+
 html{
   scroll-behavior: smooth;
 }
@@ -10,6 +12,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Alatsi', sans-serif;
+  font-family: 'Jockey One', sans-serif;
 }
 
 code {
