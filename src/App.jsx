@@ -2,8 +2,9 @@ import "./App.css";
 import Footer from "./components/Footer";
 import Projetos from "./components/projetos";
 import Home from "./components/home";
-import Sobrenos from "./components/Sobrenos";
+
 import Header from "./components/header";
+import Sobrenos from "./components/sobrenos";
 
 function App() {
   return (
