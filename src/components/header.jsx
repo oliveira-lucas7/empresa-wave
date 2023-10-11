@@ -16,8 +16,11 @@ import React from "react";
 import logo from "../img/logo-wave.png";
 import LanguageIcon from "@mui/icons-material/Language";
 import MenuIcon from "@mui/icons-material/Menu";
+import { useTranslation } from "react-i18next";
 
 function Header(props) {
+  const { t, i18n } = useTranslation();
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -28,6 +31,21 @@ function Header(props) {
     setAnchorElNav(null);
   };
 
+  const [lang, setLang] = React.useState("BR");
+
+  const handleChange = (event) => {
+    let valorLang = event.target.value;
+
+    if (valorLang === "BR") {
+      setLang("ptBR");
+      i18n.changeLanguage(lang);
+    } else {
+      setLang("en");
+      i18n.changeLanguage(lang);
+    }
+  };
+
+  console.log();
   return (
     <AppBar
       position="sticky"
@@ -85,7 +103,7 @@ function Header(props) {
                       color: "black",
                     }}
                   >
-                    Logic Wave
+                    {t("LogicWaveHeader")}
                   </Typography>
                 </MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}>
@@ -98,11 +116,11 @@ function Header(props) {
                       color: "black",
                     }}
                   >
-                    Nossos projetos
+                    {t("nossosProjetosHeader")}
                   </Typography>
                 </MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}>
-                <Typography
+                  <Typography
                     textAlign="center"
                     component={"a"}
                     href="#Sobrenos"
@@ -111,7 +129,7 @@ function Header(props) {
                       color: "black",
                     }}
                   >
-                    Nossos projetos
+                    {t("sobreEmpresaHeader")}
                   </Typography>
                 </MenuItem>
               </Menu>
@@ -223,9 +241,8 @@ function Header(props) {
                   color: "rgba(255, 255, 255, 1)",
                 }}
                 href="#LogicWave"
-                
               >
-                Logic Wave
+                {t("LogicWaveHeader")}
               </Button>
               <Button
                 variant="text"
@@ -239,7 +256,7 @@ function Header(props) {
                 }}
                 href="#Nossoprojeto"
               >
-                Nossos projetos
+                {t("nossosProjetosHeader")}
               </Button>
               <Button
                 variant="text"
@@ -252,9 +269,8 @@ function Header(props) {
                   color: "rgba(255, 255, 255, 1)",
                 }}
                 href="#Sobrenos"
-
               >
-                Sobre a empresa
+                {t("sobreEmpresaHeader")}
               </Button>
             </Box>
             <Box
@@ -273,9 +289,9 @@ function Header(props) {
                 <InputLabel>
                   <LanguageIcon color="white" />
                 </InputLabel>
-                <Select>
-                  <MenuItem  value="EN">English</MenuItem>
-                  <MenuItem  value="BR">PT-BR</MenuItem>
+                <Select value={lang} onChange={handleChange}>
+                  <MenuItem value={`EN`}>EN</MenuItem>
+                  <MenuItem value={`BR`}>BR</MenuItem>
                 </Select>
               </FormControl>
             </Box>
