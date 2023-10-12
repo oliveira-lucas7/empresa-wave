@@ -1,0 +1,101 @@
+.testeQuatro{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.teste{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.testeDois{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.testeTres{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.teste, .testeDois, .testeTres, .testeQuatro span{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+.container{
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 1024px){
+    .testeQuatro img{
+        width: 30%;
+    }
+    .teste img{
+        width: 30%;
+    }
+    .testeDois img{
+        width: 30%;
+    }
+    .testeTres img{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .testeQuatro img{
+        width: 25%;
+    }
+    .teste img{
+        width: 25%;
+    }
+    .testeDois img{
+        width: 25%;
+    }
+    .testeTres img{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 425px) and (min-width: 425px){
+    .testeQuatro span{
+        font-size: 13px;
+        max-width: 30%;
+    }
+    .teste span{
+        font-size: 13px;
+        max-width: 30%;
+    }
+    .testeDois span{
+        font-size: 13px;
+        max-width: 30%;
+    }
+    .testeTres span{
+        font-size: 13px;
+        max-width: 30%;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .testeQuatro img{
+        width: 60%;
+    }
+    .teste img{
+        width: 60%;
+    }
+    .testeDois img{
+        width: 60%;
+    }
+    .testeTres img{
+        width: 60%;
+    }
+}
+
+
+
