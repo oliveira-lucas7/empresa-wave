@@ -1,0 +1,19 @@
+.langSwitcher {
+  display: flex;
+  align-items: center;
+}
+
+.img {
+  width: 50px;
+}
+
+.langSwitcher > button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.langSwitcher > button > span {
+  color: white;
+  font-size: 1rem;
+}

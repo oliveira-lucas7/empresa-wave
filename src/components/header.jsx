@@ -17,6 +17,7 @@ import logo from "../img/logo-wave.png";
 import LanguageIcon from "@mui/icons-material/Language";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useTranslation } from "react-i18next";
+import Language from "./LanguageSwitcher/Language";
 
 function Header(props) {
   const { t, i18n } = useTranslation();
@@ -32,18 +33,6 @@ function Header(props) {
   };
 
   const [lang, setLang] = React.useState("BR");
-
-  const handleChange = (event) => {
-    let valorLang = event.target.value;
-
-    if (valorLang === "BR") {
-      setLang("ptBR");
-      i18n.changeLanguage(lang);
-    } else {
-      setLang("en");
-      i18n.changeLanguage(lang);
-    }
-  };
 
   console.log();
   return (
@@ -169,21 +158,7 @@ function Header(props) {
                 flexGrow: 0,
               }}
             >
-              <FormControl
-                fullWidth
-                sx={{
-                  backgroundColor: "rgba(255, 255, 255, 1)",
-                  borderRadius: 1,
-                }}
-              >
-                <InputLabel>
-                  <LanguageIcon color="white" />
-                </InputLabel>
-                <Select>
-                  <MenuItem value="EN">English</MenuItem>
-                  <MenuItem value="BR">PT-BR</MenuItem>
-                </Select>
-              </FormControl>
+              <Language />
             </Box>
           </Box>
 
@@ -279,21 +254,7 @@ function Header(props) {
                 flexGrow: 0,
               }}
             >
-              <FormControl
-                fullWidth
-                sx={{
-                  backgroundColor: "rgba(255, 255, 255, 1)",
-                  borderRadius: 1,
-                }}
-              >
-                <InputLabel>
-                  <LanguageIcon color="white" />
-                </InputLabel>
-                <Select value={lang} onChange={handleChange}>
-                  <MenuItem value={`EN`}>EN</MenuItem>
-                  <MenuItem value={`BR`}>BR</MenuItem>
-                </Select>
-              </FormControl>
+              <Language />
             </Box>
           </Box>
         </Toolbar>
