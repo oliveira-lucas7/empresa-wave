@@ -15,7 +15,6 @@ export default () => {
     <Swiper className={Style.container}
       // install Swiper modules
       modules={[Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={50}
       slidesPerView={1}
       navigation
       pagination={{ clickable: true }}
@@ -23,21 +22,29 @@ export default () => {
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
     >
-      <SwiperSlide className={Style.teste}>
-        <span>Não construimos só sites, construimos seu futuro</span>
-        <img src={LogoHome} alt="" />
+      <SwiperSlide>
+        <div className={Style.teste}>
+          <span>Não construimos só sites, construimos seu futuro</span>
+          <img src={LogoHome} alt="" />
+        </div>
       </SwiperSlide>
-      <SwiperSlide className={Style.testeDois}>
-        <span>A um clique de mudar sua história</span>
-        <img src={LogoHome} alt="" />
+      <SwiperSlide>
+        <div className={Style.teste}>
+          <span>A um clique de mudar sua história</span>
+          <img src={LogoHome} alt="" />
+        </div>
       </SwiperSlide>
-      <SwiperSlide className={Style.testeTres}>
-        <span>Transformando desafios em soluções digitais</span>
-        <img src={LogoHome} alt="" />
+      <SwiperSlide>
+        <div className={Style.teste}>
+          <span>Transformando desafios em soluções digitais</span>
+          <img src={LogoHome} alt="" />
+        </div>
       </SwiperSlide>
-      <SwiperSlide className={Style.testeQuatro}>
-        <span>Dê um passo para o futuro</span>
-        <img src={LogoHome} alt="" />
+      <SwiperSlide>
+        <div className={Style.teste}>
+          <span>Dê um passo para o futuro</span>
+          <img src={LogoHome} alt="" />
+        </div>
       </SwiperSlide>
       ...
     </Swiper>

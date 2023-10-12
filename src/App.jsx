@@ -3,7 +3,7 @@ import Footer from "./components/Footer";
 import Projetos from "./components/projetos";
 import Header from "./components/header";
 import Carrosel from "./components/carrosel";
-import Sobrenos from "./components/Sobrenos";
+import Sobrenos from "./components/sobrenos";
 
 function App() {
   return (
