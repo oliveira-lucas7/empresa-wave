@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import LogoHome from "../img/logoTransparente.png"
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import Style from "../css/carrosel.module.css"
+import slidetres from "../img/soluçaodigital.jpg"
 
 
 // Import Swiper styles
@@ -25,25 +26,25 @@ export default () => {
       <SwiperSlide>
         <div className={Style.teste}>
           <span>Não construimos só sites, construimos seu futuro</span>
-          <img src={LogoHome} alt="" />
+          <img src={LogoHome} alt="Imagem da logo da empresa com uma frase" />
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className={Style.teste}>
           <span>A um clique de mudar sua história</span>
-          <img src={LogoHome} alt="" />
+          <img src={LogoHome} alt="Imagem da logo da empresa com uma frase" />
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className={Style.teste}>
           <span>Transformando desafios em soluções digitais</span>
-          <img src={LogoHome} alt="" />
+          <img src={LogoHome} alt="Imagem da logo da empresa com uma frase" />
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className={Style.teste}>
           <span>Dê um passo para o futuro</span>
-          <img src={LogoHome} alt="" />
+          <img src={LogoHome} alt="Imagem da logo da empresa com uma frase" />
         </div>
       </SwiperSlide>
       ...
